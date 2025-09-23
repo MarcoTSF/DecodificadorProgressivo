@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Decifrador e Codificador de César com Variação Progressiva</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Ferramenta Criptográfica</h1>
+            <div class="tool-wrapper">
+                <div class="tool-column" id="decoder-section">
+                    <h2>Decifrador</h2>
+                    <div>
+                        <label for="input-ciphertext">Mensagem Cifrada:</label>
+                        <textarea id="input-ciphertext" placeholder="Digite o texto cifrado aqui..."></textarea>
+                    </div>
+                    <button id="decrypt-button">Decifrar</button>
+                    <div>
+                        <label for="output-plaintext">Mensagem Decifrada:</label>
+                        <textarea id="output-plaintext" readonly placeholder="O resultado aparecerá aqui..."></textarea>
+                    </div>
+                </div>
+                <div class="tool-column" id="encoder-section">
+                    <h2>Codificador</h2>
+                    <div>
+                        <label for="input-plaintext">Mensagem para Codificar:</label>
+                        <textarea id="input-plaintext" placeholder="Digite o texto claro aqui..."></textarea>
+                    </div>
+                    <button id="encrypt-button" class="green-button">Codificar</button>
+                    <div>
+                        <label for="output-ciphertext">Mensagem Codificada:</label>
+                        <textarea id="output-ciphertext" readonly placeholder="O resultado codificado aparecerá aqui..."></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>

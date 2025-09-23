@@ -1,0 +1,115 @@
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #198754;
+    --background-light: #f8f9fa;
+    --container-bg: #ffffff;
+    --text-color: #212529;
+    --heading-color: #1a2a4c;
+    --border-color: #dee2e6;
+}
+
+body { 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6; 
+    padding: 40px; 
+    background-color: var(--background-light);
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: var(--container-bg);
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-emphasis-color: transparent;
+}
+
+h2 {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #495057;
+}
+
+.tool-wrapper {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.tool-column {
+    flex: 1;
+    min-width: 0;
+}
+
+#decoder-section h2 { border-color: var(--primary-color); }
+#encoder-section h2 { border-color: var(--secondary-color); }
+
+textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 1rem;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    resize: vertical;
+    transition: all 0.2s ease-in-out;
+}
+
+textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 8px rgba(13, 110, 253, 0.25);
+}
+
+textarea[readonly] {
+    background-color: #e9ecef;
+    cursor: default;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #fff;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.green-button { background-color: var(--secondary-color); }
+.green-button:hover { background-color: #157347; }
