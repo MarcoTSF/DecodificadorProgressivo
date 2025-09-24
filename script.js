@@ -50,26 +50,22 @@ const inputCipherTextArea = document.getElementById('input-ciphertext');
 const outputPlainTextArea = document.getElementById('output-plaintext');
 const decryptButton = document.getElementById('decrypt-button');
 
-inputCipherTextArea.value = "FTUB OGPUCIGO IRL HIGMJVEHE";
-
 function handleDecrypt() {
     const ciphertext = inputCipherTextArea.value.toUpperCase();
     const plaintext = decifrarCesarVariavel(ciphertext);
     outputPlainTextArea.value = plaintext;
 }
+
 decryptButton.addEventListener('click', handleDecrypt);
-handleDecrypt();
 
 const inputPlainTextArea = document.getElementById('input-plaintext');
 const outputCipherTextArea = document.getElementById('output-ciphertext');
 const encryptButton = document.getElementById('encrypt-button');
-
-inputPlainTextArea.value = "THIS IS A SECRET MESSAGE";
 
 function handleEncrypt() {
     const plaintext = inputPlainTextArea.value;
     const ciphertext = codificarCesarVariavel(plaintext);
     outputCipherTextArea.value = ciphertext;
 }
+
 encryptButton.addEventListener('click', handleEncrypt);
-handleEncrypt();
